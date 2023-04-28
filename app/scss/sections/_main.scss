@@ -1,0 +1,44 @@
+.main {
+    background: url('../images/bg-main.jpg') no-repeat center / cover;
+
+    @media(max-width: 960px)  {
+        background: url('../images/bg-main.jpg') no-repeat center / cover;
+    }
+
+    &__wrapper {
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $white;
+    }
+
+    &__title {
+        margin-bottom: 16px;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 42px;
+        line-height: 120%;
+        text-align: center;
+
+        @media(max-width: 960px) {
+            font-weight: 700;
+            font-size: 32px;
+        }
+    }
+
+    &__description {
+        text-align: center;
+        max-width: 362px;
+        margin: 0 auto 24px;
+    }
+
+    &__align {
+        text-align: center;
+    }
+
+    &__button {
+        margin: 0 auto;
+    }
+}

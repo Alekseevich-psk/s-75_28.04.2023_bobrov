@@ -1,0 +1,15 @@
+@import './normilize/reset';
+@import './node_modules/swiper/swiper-bundle.min';
+
+@import "./setting/variables";
+@import "./setting/main";
+
+@import "./elements/header";
+@import "./elements/footer";
+@import "./elements/menu";
+@import "./elements/s-title";
+@import "./elements/input";
+@import "./elements/button";
+@import "./elements/sl-arrows";
+
+@import "./sections/main";
