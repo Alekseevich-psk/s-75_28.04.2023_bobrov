@@ -1,3 +1,75 @@
 .menu {
-    
+
+    &.active {
+        @media(max-width: 960px) {
+            .menu__list {
+                display: block;
+                position: fixed;
+                background-color: $white;
+                top: 60px;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+
+    &__list {
+        @media(max-width: 960px) {
+            display: none;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        margin-right: 24px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        @media(max-width: 960px) {
+            margin-right: 0;
+            display: block;
+            text-align: center;
+            margin-bottom: 16px;
+
+            &:first-child {
+                margin-top: 16px;
+            }
+        }
+    }
+
+    &__link {
+        color: $active;
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 15px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__button {
+        @media(min-width: 960px) {
+            display: none;
+        }
+
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-size: 100% 100%;
+        background-position: center center;
+        background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 12"%3E%3Cpath fill="%23090909" d="M0 12h18v-2H0v2Zm0-5h18V5H0v2Zm0-7v2h18V0H0Z"/%3E%3C/svg%3E');
+
+        @media(max-width: 540px) {
+            width: 24px;
+            height: 24px;
+        }
+
+    }
+
+
 }
