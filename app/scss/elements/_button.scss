@@ -9,6 +9,26 @@
     line-height: 1;
     background-color: $subActive;
 
+    &--arrow {
+        position: relative;
+
+        .button__text {
+            position: relative;
+            padding-left: 24px;
+
+            &:before {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 16px;
+                height: 16px;
+                background-size: 100% 100%;
+                background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 16"%3E%3Cg clip-path="url(%23a)" opacity="1"%3E%3Cpath stroke="%23090909" stroke-linecap="round" d="M3.46 8h9.334"/%3E%3Cpath stroke="%23090909" stroke-linecap="round" stroke-linejoin="round" d="m8.794 12 4-4-4-4"/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id="a"%3E%3Cpath fill="%23fff" d="M0 0h16v16H0z" transform="translate(.127)"/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E');
+            }
+        }
+    }
+
     &:hover {
         background-color: #ffc353;
     }
