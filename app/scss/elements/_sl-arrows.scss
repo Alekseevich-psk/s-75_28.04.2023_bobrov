@@ -8,7 +8,11 @@
     z-index: 10;
 
     @media(max-width: 960px) {
-        display: none;
+        bottom: auto;
+        left: auto;
+        top: 6px;
+        right: 0;
+        width: 80px;
     }
 
     &__arrow {
@@ -22,6 +26,11 @@
         background-repeat: no-repeat;
         background-size: 60% 60%;
         background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 24"%3E%3Cpath stroke="%23090909" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="m1.695 1.28 10.691 10.5-10.691 10.5"/%3E%3C/svg%3E');
+
+        @media(max-width: 960px) {
+            width: 32px;
+            height: 32px;
+        }
 
         &:first-child {
             margin-right: 6px;

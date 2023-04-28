@@ -10,19 +10,45 @@
         align-items: center;
         height: auto;
         padding-bottom: 60px;
+
+        @media(max-width: 960px) {
+            flex-direction: column;
+        }
+    }
+
+    &__s-title {
+        @media(max-width: 960px) {
+            padding-right: 66px;
+        }
     }
 
     &__inner {
         width: 50%;
 
+        @media(max-width: 960px) {
+            width: 100%;
+
+            &:first-child {
+                margin-bottom: 24px;
+            }
+        }
+
         &--text {
             padding-right: 60px;
+
+            @media(max-width: 960px) {
+                padding-right: 0;
+            }
         }
 
         img {
             width: 100%;
             height: 420px;
             object-fit: cover;
+
+            @media(max-width: 768px) {
+                height: 320px;
+            }
         }
     }
 
@@ -39,6 +65,11 @@
     .swiper-pagination {
         text-align: right;
         padding-right: 40px;
+
+        @media(max-width: 960px) {
+            text-align: center;
+            padding-right: 0;
+        }
     }
 
     .swiper-pagination-bullet-active {

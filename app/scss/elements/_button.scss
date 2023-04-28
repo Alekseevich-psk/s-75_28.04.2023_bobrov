@@ -9,10 +9,15 @@
     line-height: 1;
     background-color: $subActive;
 
+    @media(max-width: 768px) {
+        width: 100%;
+    }
+
     &--arrow {
         position: relative;
 
         .button__text {
+            display: inline-block;
             position: relative;
             padding-left: 24px;
 
