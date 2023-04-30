@@ -5,6 +5,7 @@
     border-radius: $brForElem;
     width: 100%;
     transition: $transition;
+    font-weight: 400;
 
     &:hover, &:active {
         border: 1px solid $active;
