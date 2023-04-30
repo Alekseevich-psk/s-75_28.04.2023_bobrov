@@ -1707,7 +1707,6 @@ a {
 .popup__body {
   position: relative;
   background-color: #fff;
-  border-radius: 6px;
   color: #090909;
   padding: 40px;
   margin: 10% auto;

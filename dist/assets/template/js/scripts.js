@@ -119,7 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
   if (!preloader) return;
   setTimeout(function () {
     document.querySelector(".preloader").classList.add("hide");
-  }, 1000);
+  }, 400);
 });
 "use strict";
 
