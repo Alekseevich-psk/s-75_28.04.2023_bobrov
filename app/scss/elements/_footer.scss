@@ -1,3 +1,46 @@
 .footer {
-    
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #3C434A;
+    color: $white;
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__inner {
+        width: 50%;
+
+        &:first-child, &:nth-child(2){
+            margin-bottom: 12px;
+        }
+
+        &:nth-child(3),  &:nth-child(4) {
+            font-size: 13px;
+        }
+
+        &:nth-child(2n) {
+            text-align: right;
+        }
+
+        &--political {
+            cursor: pointer;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        @media(max-width: 768px) {
+            width: 100%;
+            text-align: center !important;
+        }
+    }
+
+    a {
+        color: $white;
+        text-decoration: underline;
+    }
 }
