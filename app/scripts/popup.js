@@ -13,7 +13,7 @@
         btnsOpenPopup.forEach((element) => {
             element.addEventListener("click", () => {
                 popup.classList.toggle("active");
-
+         
                 if (element.nextElementSibling !== null && formName) {
                     formName.value = element.nextElementSibling.innerHTML;
                 }

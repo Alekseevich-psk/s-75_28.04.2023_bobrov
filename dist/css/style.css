@@ -1373,16 +1373,21 @@ a {
 }
 .button--arrow {
   position: relative;
+  padding: 0;
 }
 .button--arrow .button__text {
   display: inline-block;
   position: relative;
-  padding-left: 24px;
+  padding: 12px 24px;
+  padding-left: 40px;
 }
 .button--arrow .button__text:before {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-46px, -50%);
+      -ms-transform: translate(-46px, -50%);
+          transform: translate(-46px, -50%);
   content: "";
   width: 16px;
   height: 16px;
