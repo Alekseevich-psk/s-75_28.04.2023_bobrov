@@ -30,17 +30,6 @@ try {
 "use strict";
 
 (function () {
-  var faq = document.querySelector(".faq");
-  if (!faq) return;
-  faq.querySelectorAll(".faq__item").forEach(function (element) {
-    element.addEventListener("click", function () {
-      this.classList.toggle("active");
-    });
-  });
-})();
-"use strict";
-
-(function () {
   var header = document.querySelector(".header");
   if (!header) return;
   var classForHeaderScroll = "scroll";
@@ -121,28 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
     document.querySelector(".preloader").classList.add("hide");
   }, 400);
 });
-"use strict";
-
-(function () {
-  var ranting = document.querySelectorAll(".ranting");
-  console.log(ranting.length);
-  if (ranting.length <= 0) return;
-  ranting.forEach(function (el) {
-    var maxCount = el.querySelector(".ranting__max-count");
-    var rantingValue = el.querySelector(".ranting__value");
-    var starsList = el.querySelector(".ranting__list");
-    if (maxCount) cloneStar(starsList, Number(maxCount.innerHTML), Number(rantingValue.innerHTML));
-  });
-  function cloneStar(parent, countElem, rantingValue) {
-    var integer = Math.trunc(rantingValue);
-    var percent = 100;
-    for (var i = 0; i < countElem; i++) {
-      if (integer == i) percent = rantingValue % 1 * 100;
-      if (integer < i) percent = 0;
-      parent.insertAdjacentHTML("beforeend", "<div class=\"ranting__item\">\n                    <div class=\"ranting__bg\" style=\"width:".concat(percent, "%\"></div>\n            </div>"));
-    }
-  }
-})();
 "use strict";
 
 (function () {
