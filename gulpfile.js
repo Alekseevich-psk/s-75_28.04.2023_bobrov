@@ -3,8 +3,8 @@ const project_flr = "dist";
 const source_flr = "app";
 const baseDir = "./" + project_flr + "/";
 const fs = require('fs');
-const pathFiles = "/assets/template/";
-const outPathFiles = "/assets/template/";
+const pathFiles = "/";
+const outPathFiles = "/";
 
 // main path
 let path = {
