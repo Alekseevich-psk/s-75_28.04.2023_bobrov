@@ -1372,16 +1372,12 @@ a {
   }
 }
 .button--arrow {
-  position: relative;
-  padding: 0;
-}
-.button--arrow .button__text {
   display: inline-block;
   position: relative;
   padding: 12px 24px;
   padding-left: 40px;
 }
-.button--arrow .button__text:before {
+.button--arrow:before {
   position: absolute;
   top: 50%;
   left: 50%;
